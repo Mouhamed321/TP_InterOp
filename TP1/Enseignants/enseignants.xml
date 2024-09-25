@@ -1,0 +1,14 @@
+<!DOCTYPE enseignants SYSTEM "enseignants.dtd">
+
+<enseignants>
+    <enseignant dep="&isis;">
+        <nom> Singer </nom>
+        <prenom> Nicolas </prenom>
+        <prenom>Sylvain</prenom>
+    </enseignant>
+    <enseignant dep="&isis;">
+        <nom> Trouilhet </nom>
+        <prenom> Sylvie </prenom>
+        <age> 38 </age>
+    </enseignant>
+</enseignants>

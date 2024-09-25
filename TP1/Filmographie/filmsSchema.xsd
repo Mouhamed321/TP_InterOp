@@ -1,0 +1,53 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name = "films" type ="filmstype" />
+    <xs:complexType name = "filmstype">
+        <xs:sequence>
+            <xs:element name ="film" type = "filmtype" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name ="filmtype">
+        <xs:sequence>
+            <xs:element name="nationalite" type="xs:string"/>
+            <xs:element name="titre" type="xs:string"/>
+            <xs:element name="exploitation" type="exploitationtype" />
+            <xs:element name="acteurs" type="acteurstype" />
+            <xs:element name="realisateur" type="xs:string"/>
+            <xs:element name="genres" type="genrestype" />
+            <xs:element name="duree" type="xs:positiveInteger" />
+            <xs:element name="scenario" type="xs:string" />
+        </xs:sequence>
+        <xs:attribute name="annee" type="xs:positiveInteger"/>
+        <xs:attribute name="visa" type="xs:positiveInteger"/>
+    </xs:complexType>
+
+    <xs:complexType name ="exploitationtype">
+        <xs:sequence>
+            <xs:element name="dateSortie" type="xs:string"/>
+            <xs:element name="nbreEntree" type="xs:positiveInteger" />
+            <xs:element name="nbreSalle" type="xs:positiveInteger" />
+            <xs:element name="listepays" type="listepaystype" />
+        </xs:sequence>
+    </xs:complexType>
+        
+    <xs:complexType name="acteurstype">
+        <xs:sequence>
+            <xs:element name="acteur" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="genrestype">
+        <xs:sequence>
+            <xs:element name="genre" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="listepaystype">
+        <xs:sequence>
+            <xs:element name="pays" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+
+
+</xs:schema>

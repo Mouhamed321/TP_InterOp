@@ -1,0 +1,43 @@
+1) v:/films/film/realisateur
+
+2) s:count(/films/film)
+
+3) v:/films/film[2]/scenario
+
+4) v://film[@annee='2004']/realisateur
+
+5) s:count(//film/exploitation[nbreEntree >= 1000000])
+
+6) v://film/exploitation[nbreEntree >= 1000000 and nbreSalle >= 400]
+
+7) v://film/exploitation/listepays[count(pays) >=2 ]
+
+8) v://film[count(exploitation/listepays/pays[. != 'Italie']) > 2]
+
+9) v://film/scenario[string-length(.) > 200]
+
+10) v://film/exploitation/listepays[pays = 'Allemagne']
+
+11) v://film/exploitation/listepays[pays = 'Allemagne' or pays = Angleterre]
+
+12) v://film/@visa
+
+13) v://film[count(acteurs/acteur) > 3]/titre
+
+14) v://film[duree &lt; 120]/titre
+
+15) v://film[3]/acteurs/acteur[2]
+
+16) v://film[contains(exploitation/dateSortie, 'mercredi')]
+
+17) v://film/acteurs/acteur[substring(., (string-length(.)-1), 2) ='on']
+
+18) v://film[contains(exploiation/dateSortie, '2024')]
+
+19) v://film/exploitation/listepays[pays = 'Allemagne' and pays = 'Royaume-Uni']
+
+20) v://film/acteurs/acteur[. = following::acteur]
+
+21)v://film[genres/genre='comédie' and count(acteurs/acteur) >= 3]/@annee
+
+22) v://film[@annee='2024' and acteurs/acteur[.=preceding::film/acteurs/acteur]]

@@ -1,0 +1,120 @@
+<!DOCTYPE films SYSTEM "films.dtd">
+
+<films
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="filmsSchema.xsd">
+    
+    <film annee="2005" visa="114089">
+        <nationalite>Américain</nationalite>
+        <titre>King kong</titre>
+        <exploitation>
+            <dateSortie>mercredi 14 décembre 2005</dateSortie>
+            <nbreEntree>2838759</nbreEntree>
+            <nbreSalle>547</nbreSalle>
+            <listepays>
+                <pays>Espagne</pays>
+                <pays>Allemagne</pays>
+                <pays>Italie</pays>
+            </listepays>
+        </exploitation>
+        <acteurs>
+            <acteur>Naomi Watts</acteur>
+            <acteur>Peter Jackson</acteur>
+            <acteur>Jack Black</acteur>
+            <acteur>Adrien Brody</acteur>
+        </acteurs>
+        <realisateur>Peter Jackson</realisateur>
+        <genres>
+            <genre>aventure</genre>
+        </genres>
+        <duree>188</duree>
+        <scenario>( <![CDATA[ New York, 1933. Artiste de music-hall à la rue, Ann Darrow rencontre l'audacieux explorateur/réalisateur Carl
+Denham. Ce dernier rêve de terminer son lm inachevé, mais nourrit surtout la folle ambition d'être le premier à
+découvrir le secret de la mystérieuse Skull Island. Il va entraîner Ann dans sa périlleuse aventure... ]]>)</scenario>
+    </film>
+
+    <film annee="1993" visa="87842">
+        <nationalite>Américain</nationalite>
+        <titre>La Liste de Schindler</titre>
+        <exploitation>
+            <dateSortie>mercredi 2 mars 1994</dateSortie>
+            <nbreEntree>3734251</nbreEntree>
+            <nbreSalle>395</nbreSalle>
+            <listepays>
+                <pays>Portugal</pays>
+                <pays>Allemagne</pays>
+                <pays>Royaume-Uni</pays>
+            </listepays>
+        </exploitation>
+        <acteurs>
+            <acteur>Liam Neeson</acteur>
+            <acteur>Ben Kingsley</acteur>
+            <acteur>Ralph Fiennes</acteur>
+            <acteur>Caroline Goodall</acteur>
+        </acteurs>
+        <realisateur>Steven Spielberg</realisateur>
+        <genres>
+            <genre>drame</genre>
+            <genre>historique</genre>
+        </genres>
+        <duree>195</duree>
+        <scenario>( <![CDATA[ Durant la Seconde Guerre mondiale, l'industriel allemand Oskar Schindler, membre du parti nazi, utilise sa position pour sauver plus d'un millier de Juifs de l'Holocauste en les employant dans ses usines. ]]>)</scenario>
+    </film>
+
+    <film annee="1999" visa="99677">
+        <nationalite>Américain</nationalite>
+        <titre>La Ligne verte</titre>
+        <exploitation>
+            <dateSortie>mercredi 1 mars 2000</dateSortie>
+            <nbreEntree>7036330</nbreEntree>
+            <nbreSalle>685</nbreSalle>
+            <listepays>
+                <pays>Italie</pays>
+                <pays>Royaume-Uni</pays>
+                <pays>Espagne</pays>
+            </listepays>
+        </exploitation>
+        <acteurs>
+            <acteur>Tom Hanks</acteur>
+            <acteur>Michael Clarke Duncan</acteur>
+            <acteur>David Morse</acteur>
+            <acteur>Martin Balsam</acteur>
+        </acteurs>
+        <realisateur>Frank Darabont</realisateur>
+        <genres>
+            <genre>drame</genre>
+            <genre>fantastique</genre>
+        </genres>
+        <duree>189</duree>
+        <scenario>( <![CDATA[ En 1935, Paul Edgecomb, gardien-chef dans un pénitencier de Louisiane, fait la rencontre de John Coffey, un détenu condamné à mort pour le meurtre de deux fillettes. Cependant, Coffey semble doté d'un pouvoir mystérieux qui pousse Edgecomb à remettre en question sa culpabilité. ]]>)</scenario>
+    </film>
+
+    <film annee="1957" visa="17872">
+        <nationalite>Américain</nationalite>
+        <titre>12 hommes en colère</titre>
+        <exploitation>
+            <dateSortie>mercredi 4 septembre 1957</dateSortie>
+            <nbreEntree>127346</nbreEntree>
+            <nbreSalle>54</nbreSalle>
+            <listepays>
+                <pays>Royaume-Uni</pays>
+                <pays>Italie</pays>
+                <pays>Allemagne</pays>
+            </listepays>
+        </exploitation>
+        <acteurs>
+            <acteur>Henry Fonda</acteur>
+            <acteur>Lee J. Cobb</acteur>
+            <acteur>Ed Begley</acteur>
+            <acteur>Martin Balsam</acteur>
+        </acteurs>
+        <realisateur>Sidney Lumet</realisateur>
+        <genres>
+            <genre>drame</genre>
+            <genre>judiciaire</genre>
+        </genres>
+        <duree>96</duree>
+        <scenario>( <![CDATA[ Lors d'un procès, douze jurés sont chargés de décider du sort d'un jeune homme accusé de meurtre. Alors que onze jurés sont prêts à le condamner, un seul résiste, doutant de sa culpabilité. La délibération se transforme alors en un débat intense sur la justice et les préjugés. ]]>)</scenario>
+    </film>
+    
+</films>
