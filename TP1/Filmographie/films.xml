@@ -1,9 +1,8 @@
-<!DOCTYPE films SYSTEM "films.dtd">
 
 <films
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="filmsSchema.xsd">
-    
+
     <film annee="2005" visa="114089">
         <nationalite>Américain</nationalite>
         <titre>King kong</titre>

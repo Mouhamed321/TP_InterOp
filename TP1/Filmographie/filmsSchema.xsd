@@ -1,4 +1,5 @@
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
     <xs:element name = "films" type ="filmstype" />
     <xs:complexType name = "filmstype">
         <xs:sequence>
@@ -14,10 +15,10 @@
             <xs:element name="acteurs" type="acteurstype" />
             <xs:element name="realisateur" type="xs:string"/>
             <xs:element name="genres" type="genrestype" />
-            <xs:element name="duree" type="xs:positiveInteger" />
+            <xs:element name="duree" type="dureetype" />
             <xs:element name="scenario" type="xs:string" />
         </xs:sequence>
-        <xs:attribute name="annee" type="xs:positiveInteger"/>
+        <xs:attribute name="annee" type="xs:gYear"/>
         <xs:attribute name="visa" type="xs:positiveInteger"/>
     </xs:complexType>
 
@@ -32,22 +33,27 @@
         
     <xs:complexType name="acteurstype">
         <xs:sequence>
-            <xs:element name="acteur" type="xs:string"/>
+            <xs:element name="acteur" type="xs:string" maxOccurs="unbounded"/>
         </xs:sequence>
     </xs:complexType>
 
     <xs:complexType name="genrestype">
         <xs:sequence>
-            <xs:element name="genre" type="xs:string"/>
+            <xs:element name="genre" type="xs:string" maxOccurs="unbounded"/>
         </xs:sequence>
     </xs:complexType>
+
+    <xs:simpleType name="dureetype">
+        <xs:restriction base="xs:integer">
+            <xs:minInclusive value="0"/>
+            <xs:maxInclusive value="300"/>
+        </xs:restriction>
+    </xs:simpleType>
 
     <xs:complexType name="listepaystype">
         <xs:sequence>
-            <xs:element name="pays" type="xs:string"/>
+            <xs:element name="pays" type="xs:string" maxOccurs="unbounded"/>
         </xs:sequence>
     </xs:complexType>
-
-
 
 </xs:schema>
