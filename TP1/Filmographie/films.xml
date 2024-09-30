@@ -121,7 +121,8 @@
             <genre>judiciaire</genre>
         </genres>
         <duree>96</duree>
-        <scenario>( <![CDATA[ Lors d'un procès, douze jurés sont chargés de décider du sort d'un jeune homme accusé de meurtre. Alors que onze jurés sont prêts à le condamner, un seul résiste, doutant de sa culpabilité. La délibération se transforme alors en un débat intense sur la justice et les préjugés. ]]>)</scenario>
+        <scenario>
+            <keyword>procès</keyword><ev>douze jurés sont chargés de décider du sort d'un jeune homme accusé de meurtre.</ev>
     </film>
     
 </films>
