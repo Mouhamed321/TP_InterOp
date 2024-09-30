@@ -11,15 +11,20 @@
         <xs:sequence>
             <xs:element name="nationalite" type="xs:string"/>
             <xs:element name="titre" type="xs:string"/>
+            <xs:element name="image" type="imagetype"/>
             <xs:element name="exploitation" type="exploitationtype" />
             <xs:element name="acteurs" type="acteurstype" />
             <xs:element name="realisateur" type="xs:string"/>
             <xs:element name="genres" type="genrestype" />
             <xs:element name="duree" type="dureetype" />
-            <xs:element name="scenario" type="xs:string" />
+            <xs:element name="scenario" type="scenariotype"/>
         </xs:sequence>
         <xs:attribute name="annee" type="xs:gYear"/>
         <xs:attribute name="visa" type="xs:positiveInteger"/>
+    </xs:complexType>
+
+    <xs:complexType name="imagetype">
+        <xs:attribute name="nomDuFilms" type="xs:string"/>
     </xs:complexType>
 
     <xs:complexType name ="exploitationtype">
@@ -37,11 +42,32 @@
         </xs:sequence>
     </xs:complexType>
 
-    <xs:complexType name="genrestype">
-        <xs:sequence>
-            <xs:element name="genre" type="xs:string" maxOccurs="unbounded"/>
-        </xs:sequence>
-    </xs:complexType>
+    <xs:simpleType name="genrestype">
+        <xs:restriction base="xs:string" maxOccurs="unbounded">
+            <xs:enumeration value="Action"/>
+            <xs:enumeration value="Aventure"/>
+            <xs:enumeration value="Animation"/>
+            <xs:enumeration value="Biographie"/>
+            <xs:enumeration value="Comédie"/>
+            <xs:enumeration value="Crime"/>
+            <xs:enumeration value="Documentaire"/>
+            <xs:enumeration value="Drame"/>
+            <xs:enumeration value="Famille"/>
+            <xs:enumeration value="Fantastique"/>
+            <xs:enumeration value="Film noir"/>
+            <xs:enumeration value="Guerre"/>
+            <xs:enumeration value="Histoire"/>
+            <xs:enumeration value="Horreur"/>
+            <xs:enumeration value="Musical"/>
+            <xs:enumeration value="Mystère"/>
+            <xs:enumeration value="Romance"/>
+            <xs:enumeration value="Science-fiction"/>
+            <xs:enumeration value="Sport"/>
+            <xs:enumeration value="Thriller"/>
+            <xs:enumeration value="Western"/>
+        </xs:restriction>
+    </xs:simpleType>
+
 
     <xs:simpleType name="dureetype">
         <xs:restriction base="xs:integer">
@@ -50,10 +76,45 @@
         </xs:restriction>
     </xs:simpleType>
 
-    <xs:complexType name="listepaystype">
-        <xs:sequence>
-            <xs:element name="pays" type="xs:string" maxOccurs="unbounded"/>
-        </xs:sequence>
+    <xs:complexType name="scenariotype" mixed="true">
+        <xs:choice maxOccurs="unbounded">
+            <xs:element name="keyword" type="xs:string"/>
+            <xs:element name="ev" type="xs:string"/>
+            <xs:element name="personnage" type="xs:string"/>
+        </xs:choice>
     </xs:complexType>
+
+    <xs:simpleType name="listepaystype">
+        <xs:restriction base="xs:string" maxOccurs="unbounded">
+            <xs:enumeration value="Allemagne"/>
+            <xs:enumeration value="Autriche"/>
+            <xs:enumeration value="Belgique"/>
+            <xs:enumeration value="Bulgarie"/>
+            <xs:enumeration value="Chypre"/>
+            <xs:enumeration value="Croatie"/>
+            <xs:enumeration value="Danemark"/>
+            <xs:enumeration value="Espagne"/>
+            <xs:enumeration value="Estonie"/>
+            <xs:enumeration value="Finlande"/>
+            <xs:enumeration value="France"/>
+            <xs:enumeration value="Grèce"/>
+            <xs:enumeration value="Hongrie"/>
+            <xs:enumeration value="Irlande"/>
+            <xs:enumeration value="Italie"/>
+            <xs:enumeration value="Lettonie"/>
+            <xs:enumeration value="Lituanie"/>
+            <xs:enumeration value="Luxembourg"/>
+            <xs:enumeration value="Malte"/>
+            <xs:enumeration value="Pays-Bas"/>
+            <xs:enumeration value="Pologne"/>
+            <xs:enumeration value="Portugal"/>
+            <xs:enumeration value="République tchèque"/>
+            <xs:enumeration value="Roumanie"/>
+            <xs:enumeration value="Slovaquie"/>
+            <xs:enumeration value="Slovénie"/>
+            <xs:enumeration value="Suède"/>
+        </xs:restriction>
+    </xs:simpleType>
+
 
 </xs:schema>

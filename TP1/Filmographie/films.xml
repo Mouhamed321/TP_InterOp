@@ -6,6 +6,7 @@
     <film annee="2005" visa="114089">
         <nationalite>Américain</nationalite>
         <titre>King kong</titre>
+        <image ref="kinkong.png"/>
         <exploitation>
             <dateSortie>mercredi 14 décembre 2005</dateSortie>
             <nbreEntree>2838759</nbreEntree>
@@ -27,14 +28,15 @@
             <genre>aventure</genre>
         </genres>
         <duree>188</duree>
-        <scenario>( <![CDATA[ New York, 1933. Artiste de music-hall à la rue, Ann Darrow rencontre l'audacieux explorateur/réalisateur Carl
-Denham. Ce dernier rêve de terminer son lm inachevé, mais nourrit surtout la folle ambition d'être le premier à
-découvrir le secret de la mystérieuse Skull Island. Il va entraîner Ann dans sa périlleuse aventure... ]]>)</scenario>
+        <scenario>
+            <ev>New York, 1933.</ev><keyword>Artiste</keyword><personnage>Ann Darrow</personnage><keyword>explorateur/réalisateur</keyword><personnage>Carl Denham.</personnage> 
+        </scenario>
     </film>
 
     <film annee="1993" visa="87842">
         <nationalite>Américain</nationalite>
         <titre>La Liste de Schindler</titre>
+        <image ref="lalistedeschindler.jpg"/>
         <exploitation>
             <dateSortie>mercredi 2 mars 1994</dateSortie>
             <nbreEntree>3734251</nbreEntree>
@@ -57,12 +59,15 @@ découvrir le secret de la mystérieuse Skull Island. Il va entraîner Ann dans 
             <genre>historique</genre>
         </genres>
         <duree>195</duree>
-        <scenario>( <![CDATA[ Durant la Seconde Guerre mondiale, l'industriel allemand Oskar Schindler, membre du parti nazi, utilise sa position pour sauver plus d'un millier de Juifs de l'Holocauste en les employant dans ses usines. ]]>)</scenario>
+        <scenario>
+            <ev>Durant la Seconde Guerre mondiale,</ev><personnage>Oskar Schindler</personnage><keyword>nazi</keyword><keyword>Holocauste</keyword>
+        </scenario>
     </film>
 
     <film annee="1999" visa="99677">
         <nationalite>Américain</nationalite>
         <titre>La Ligne verte</titre>
+        <image ref="laligneverte.jpg"/>
         <exploitation>
             <dateSortie>mercredi 1 mars 2000</dateSortie>
             <nbreEntree>7036330</nbreEntree>
@@ -85,12 +90,15 @@ découvrir le secret de la mystérieuse Skull Island. Il va entraîner Ann dans 
             <genre>fantastique</genre>
         </genres>
         <duree>189</duree>
-        <scenario>( <![CDATA[ En 1935, Paul Edgecomb, gardien-chef dans un pénitencier de Louisiane, fait la rencontre de John Coffey, un détenu condamné à mort pour le meurtre de deux fillettes. Cependant, Coffey semble doté d'un pouvoir mystérieux qui pousse Edgecomb à remettre en question sa culpabilité. ]]>)</scenario>
+        <scenario>
+            <ev>En 1935,</ev><personnage> Paul Edgecomb</personnage><keyword> gardien-chef</keyword><ev>un pénitencier de Louisiane</ev><personnage>John Coffey</personnage><ev>, un détenu condamné à mort pour le meurtre de deux fillettes.</ev>
+        </scenario>
     </film>
 
     <film annee="1957" visa="17872">
         <nationalite>Américain</nationalite>
         <titre>12 hommes en colère</titre>
+        <image ref="12hommesencolere.jpg"/>
         <exploitation>
             <dateSortie>mercredi 4 septembre 1957</dateSortie>
             <nbreEntree>127346</nbreEntree>

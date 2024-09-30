@@ -2,6 +2,7 @@
 <!ELEMENT film ( nationalite, titre, exploitation, acteurs, realisateur, genres, duree, scenario)>
 <!ELEMENT nationalite (#PCDATA)>
 <!ELEMENT titre (#PCDATA)>
+<!ELEMENT image EMPTY>
 <!ELEMENT exploitation ( dateSortie, nbreEntree, nbreSalle, listepays )>
 <!ELEMENT dateSortie (#PCDATA)>
 <!ELEMENT nbreEntree (#PCDATA)>
@@ -14,6 +15,9 @@
 <!ELEMENT genres ( genre+ )>
 <!ELEMENT genre (#PCDATA)>
 <!ELEMENT duree (#PCDATA)>
-<!ELEMENT scenario (#PCDATA)>
+<!ELEMENT scenario (keyword | ev | personnage)*>
+<!ELEMENT keyword (#PCDATA)>
+<!ELEMENT ev (#PCDATA)>
+<!ELEMENT personnage (#PCDATA)>
 <!ATTLIST film annee CDATA #REQUIRED
             visa CDATA #REQUIRED >
