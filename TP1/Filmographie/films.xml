@@ -1,4 +1,4 @@
-
+<?xml-stylesheet href="filmographie.xsl" type="text/xsl" ?>
 <films
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="filmsSchema.xsd">
@@ -123,6 +123,7 @@
         <duree>96</duree>
         <scenario>
             <keyword>procès</keyword><ev>douze jurés sont chargés de décider du sort d'un jeune homme accusé de meurtre.</ev>
+        </scenario>
     </film>
 
    <acteurDescription id="1">
