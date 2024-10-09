@@ -15,13 +15,13 @@
                 <pays>Espagne</pays>
                 <pays>Allemagne</pays>
                 <pays>Italie</pays>
-            </listepays>
+            </listepays> 
         </exploitation>
         <acteurs>
-            <acteur>Naomi Watts</acteur>
-            <acteur>Peter Jackson</acteur>
-            <acteur>Jack Black</acteur>
-            <acteur>Adrien Brody</acteur>
+            <acteur ref="1">Naomi Watts</acteur>
+            <acteur ref="2">Peter Jackson</acteur>
+            <acteur ref="3">Jack Black</acteur>
+            <acteur ref="4">Adrien Brody</acteur>
         </acteurs>
         <realisateur>Peter Jackson</realisateur>
         <genres>
@@ -124,5 +124,34 @@
         <scenario>
             <keyword>procès</keyword><ev>douze jurés sont chargés de décider du sort d'un jeune homme accusé de meurtre.</ev>
     </film>
+
+   <acteurDescription id="1">
+        <nom>Watts</nom>
+        <prenom>Naomi</prenom>
+        <dateNaissance>28/09/1968</dateNaissance>
+        <sexe>F</sexe>
+        <lieuNaissance>Shoreham, Royaume-Uni</lieuNaissance>
+    </acteurDescription>
+    <acteurDescription id="2">
+        <nom>Jackson</nom>
+        <prenom>Peter</prenom>
+        <dateNaissance>31/10/1961</dateNaissance>
+        <sexe>M</sexe>
+        <lieuNaissance>Wellington, Nouvelle-Zélande</lieuNaissance>
+    </acteurDescription>
+    <acteurDescription id="3">
+        <nom>Black</nom>
+        <prenom>Jack</prenom>
+        <dateNaissance>28/08/1969</dateNaissance>
+        <sexe>M</sexe>
+        <lieuNaissance>Santa Monica, Californie, États-Unis</lieuNaissance>
+    </acteurDescription>
+    <acteurDescription id="4">
+        <nom>Brody</nom>
+        <prenom>Adrien</prenom>
+        <dateNaissance>14/04/1973</dateNaissance>
+        <sexe>M</sexe>
+        <lieuNaissance>New York, New York, États-Unis</lieuNaissance>
+    </acteurDescription>
     
 </films>
