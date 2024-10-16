@@ -1,0 +1,18 @@
+.histoireType {
+    text-align: justify;
+    background-color: #DDDDDD;
+    }
+
+.new {
+    font-size: 60%;
+        color: red;
+        margin-bottom: 2px;
+        margin-right: 5px;
+}
+
+.old {
+    font-size: 60%;
+        color: blue;
+        margin-bottom: 2px;
+        margin-right: 5px;
+}

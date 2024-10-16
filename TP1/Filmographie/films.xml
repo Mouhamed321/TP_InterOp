@@ -64,7 +64,7 @@
         </scenario>
     </film>
 
-    <film annee="1999" visa="99677">
+    <film annee="2023" visa="99677">
         <nationalite>Américain</nationalite>
         <titre>La Ligne verte</titre>
         <image ref="laligneverte.jpg"/>
@@ -95,7 +95,7 @@
         </scenario>
     </film>
 
-    <film annee="1957" visa="17872">
+    <film annee="2023" visa="17872">
         <nationalite>Américain</nationalite>
         <titre>12 hommes en colère</titre>
         <image ref="12hommesencolere.jpg"/>
