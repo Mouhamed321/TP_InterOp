@@ -10,9 +10,8 @@
         margin-right: 5px;
 }
 
-.old {
-    font-size: 60%;
-        color: blue;
-        margin-bottom: 2px;
-        margin-right: 5px;
+
+img{
+    max-height: 300px;
+    width: auto;
 }
