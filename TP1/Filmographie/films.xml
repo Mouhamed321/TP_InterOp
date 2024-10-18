@@ -6,7 +6,7 @@
     <film annee="2005" visa="114089">
         <nationalite>Américain</nationalite>
         <titre>King kong</titre>
-        <image ref="kinkong.png"/>
+        <image ref="kingkong.jpg"/>
         <exploitation>
             <dateSortie>mercredi 14 décembre 2005</dateSortie>
             <nbreEntree>2838759</nbreEntree>
